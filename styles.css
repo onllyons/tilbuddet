@@ -3440,3 +3440,272 @@ body.single-guide.postid-16276 .produkt-kort a:focus-visible {
     max-width: 100%;
   }
 }
+
+/* Generalized wiki-style guide layout for all single guide pages with the shared article structure */
+body.single-guide.guide-template-default {
+  background: #ffffff !important;
+}
+
+body.single-guide.guide-template-default::before,
+body.single-guide.guide-template-default::after {
+  display: none !important;
+  content: none !important;
+}
+
+body.single-guide.guide-template-default .site,
+body.single-guide.guide-template-default .site-content,
+body.single-guide.guide-template-default .content-area,
+body.single-guide.guide-template-default .site-main {
+  background: #ffffff !important;
+}
+
+body.single-guide.guide-template-default .inside-article {
+  width: min(100% - 40px, 1280px);
+  margin: 0 auto;
+  padding: clamp(1rem, 2vw, 1.75rem);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+body.single-guide.guide-template-default .entry-header,
+body.single-guide.guide-template-default .entry-content {
+  width: 100%;
+  max-width: none;
+}
+
+body.single-guide.guide-template-default .entry-header {
+  max-width: 980px;
+  margin: 0 auto 2rem;
+  padding-top: 0.75rem;
+}
+
+body.single-guide.guide-template-default .entry-title {
+  margin: 0 auto 1rem;
+  color: #243043;
+  font-size: clamp(1.75rem, 2.9vw, 2.55rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  max-width: 88%;
+}
+
+body.single-guide.guide-template-default .entry-content {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 0;
+}
+
+body.single-guide.guide-template-default .entry-content > * + * {
+  margin-top: 1rem;
+}
+
+body.single-guide.guide-template-default .entry-content > p,
+body.single-guide.guide-template-default .entry-content > h2,
+body.single-guide.guide-template-default .entry-content > h3,
+body.single-guide.guide-template-default .entry-content > ul,
+body.single-guide.guide-template-default .entry-content > ol {
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+body.single-guide.guide-template-default .entry-content > p {
+  color: #606a78;
+  font-size: 1.02rem;
+  line-height: 1.9;
+}
+
+body.single-guide.guide-template-default .entry-content h2 {
+  margin-top: 2.25rem;
+  margin-bottom: 0.7rem;
+  color: #273244;
+  font-size: clamp(1.35rem, 2.15vw, 1.65rem);
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+}
+
+body.single-guide.guide-template-default .entry-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.55rem;
+  color: #273244;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: -0.01em;
+}
+
+body.single-guide.guide-template-default .entry-content ul,
+body.single-guide.guide-template-default .entry-content ol {
+  color: #606a78;
+  font-size: 1rem;
+  line-height: 1.85;
+  padding-left: 1.15rem;
+}
+
+body.single-guide.guide-template-default .entry-content li + li {
+  margin-top: 0.45rem;
+}
+
+body.single-guide.guide-template-default .entry-content strong {
+  color: #374355 !important;
+  font-weight: 600;
+}
+
+body.single-guide.guide-template-default .entry-content a {
+  color: #3d4f80;
+  text-decoration: none;
+}
+
+body.single-guide.guide-template-default .entry-content a:hover,
+body.single-guide.guide-template-default .entry-content a:focus-visible {
+  color: #29e8b2;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+body.single-guide.guide-template-default .gb-text-a336b2af {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  margin: 0 0 1rem;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: #eef3ff;
+  color: #3d4f80;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+body.single-guide.guide-template-default .relaterede-sektion {
+  width: 100%;
+  margin: 3rem auto 0;
+  padding: 2rem 0 0;
+  background: transparent !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 0;
+}
+
+body.single-guide.guide-template-default .relaterede-sektion > h2 {
+  max-width: 980px;
+  margin: 0 auto 1.1rem;
+  padding: 0;
+  color: #273244;
+  text-align: left !important;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+body.single-guide.guide-template-default .produkt-grid {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+  width: min(100%, 1240px);
+  margin: 0 auto;
+}
+
+body.single-guide.guide-template-default .produkt-kort {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 12px 0 !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  text-align: left !important;
+}
+
+body.single-guide.guide-template-default .produkt-kort img {
+  width: 100%;
+  height: 120px !important;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 0 8px;
+}
+
+body.single-guide.guide-template-default .produkt-kort h4 {
+  margin: 0 0 6px;
+  color: #273244;
+  font-size: 0.95rem !important;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+body.single-guide.guide-template-default .produkt-kort p {
+  margin: 0 0 10px !important;
+  color: #5a6472 !important;
+  font-weight: 600 !important;
+}
+
+body.single-guide.guide-template-default .produkt-kort a {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  min-height: 36px;
+  width: auto !important;
+  max-width: 180px;
+  padding: 0 14px !important;
+  border-radius: 999px !important;
+  background: #eef3ff !important;
+  color: #3d4f80 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+body.single-guide.guide-template-default .produkt-kort a:hover,
+body.single-guide.guide-template-default .produkt-kort a:focus-visible {
+  background: #dfe8ff !important;
+  color: #243b6b !important;
+}
+
+@media (min-width: 768px) {
+  body.single-guide.guide-template-default .produkt-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  body.single-guide.guide-template-default .produkt-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  body.single-guide.guide-template-default .inside-article {
+    width: min(100% - 24px, 100%);
+  }
+
+  body.single-guide.guide-template-default .entry-header,
+  body.single-guide.guide-template-default .entry-content,
+  body.single-guide.guide-template-default .relaterede-sektion > h2 {
+    max-width: 100%;
+  }
+
+  body.single-guide.guide-template-default .produkt-grid {
+    max-width: 100%;
+  }
+
+  body.single-guide.guide-template-default .entry-title {
+    font-size: clamp(1.8rem, 8vw, 2.35rem);
+  }
+
+  body.single-guide.guide-template-default .entry-content > p,
+  body.single-guide.guide-template-default .entry-content > h2,
+  body.single-guide.guide-template-default .entry-content > h3,
+  body.single-guide.guide-template-default .entry-content > ul,
+  body.single-guide.guide-template-default .entry-content > ol {
+    max-width: 100% !important;
+  }
+}
