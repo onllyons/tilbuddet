@@ -3709,3 +3709,32 @@ body.single-guide.guide-template-default .produkt-kort a:focus-visible {
     max-width: 100% !important;
   }
 }
+
+/* Keep footer dark on generalized single-guide pages */
+body.single-guide.guide-template-default .site-footer,
+body.single-guide.guide-template-default .site-footer #footer-widgets,
+body.single-guide.guide-template-default .site-footer .footer-widgets,
+body.single-guide.guide-template-default .site-footer .site-info {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+body.single-guide.guide-template-default .site-footer #footer-widgets,
+body.single-guide.guide-template-default .site-footer .footer-widgets {
+  background:
+    radial-gradient(circle at 16% 18%, rgba(255, 255, 255, 0.025), transparent 24%),
+    linear-gradient(180deg, #394b77 0%, #31405f 100%) !important;
+}
+
+body.single-guide.guide-template-default .site-footer .site-info {
+  background: rgba(27, 36, 55, 0.98) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+body.single-guide.guide-template-default .site-footer .widget,
+body.single-guide.guide-template-default .site-footer .widget-title,
+body.single-guide.guide-template-default .site-footer .menu a,
+body.single-guide.guide-template-default .site-footer p,
+body.single-guide.guide-template-default .site-footer .copyright-bar,
+body.single-guide.guide-template-default .site-footer .copyright-bar a {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
